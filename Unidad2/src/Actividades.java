@@ -1,4 +1,4 @@
-public class Acividades {
+public class Actividades {
     public static void main(String[] args) {
        //Actividad 1- pag:9. Realiza un programa que genera 2 números y nos diga el cociente, 
        // la media, la potencia y la raíz cuadrada. Usa tipos adecuados

@@ -87,15 +87,25 @@ public class Unidad2 {
     // valor1+=valor2;//valor1=valor1+valor2;
     // System.out.println(valor1);
 
-    //Condiciones if else
-        int numero=3;
-        int numero2=5;
+    // //Condiciones if else
+    //     int numero=3;
+    //     int numero2=5;
+    //     int resultado;
 
-        if(numero>numero2){
-            System.out.println("Numero > Numero2");
-        } 
-        System.out.println("POR AQUI VOY");
+    //     if(numero>numero2){
+    //         resultado=numero+numero2;
+    //     } 
+    //     else{
+    //         //Si no se cumple hara esto
+    //         resultado=numero-numero2;
+    //     }
+    //     System.out.println(numero+" "+numero2+" "+resultado);
+    //     resultado=(numero>numero2) ? numero+numero2:numero-numero2;
+    //     System.out.println(numero+" "+numero2+" "+resultado);
+    //     System.out.println("POR AQUI VOY");
 
+
+    
         }
     
     }
