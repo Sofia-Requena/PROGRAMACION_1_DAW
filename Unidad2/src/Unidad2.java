@@ -104,8 +104,72 @@ public class Unidad2 {
     //     System.out.println(numero+" "+numero2+" "+resultado);
     //     System.out.println("POR AQUI VOY");
 
+    //Dias de la semana con if else encadenado
+    // int dia_semana=5;
 
+    // if (dia_semana == 1){
+    //     System.out.println("Es Lunes");
+    // }
+
+    // else if(dia_semana == 2){
+    //     System.out.println("Es Martes");
+    // }
+
+    //     else if(dia_semana == 3){
+    //     System.out.println("Es Miercoles");
+    // }
+        
+    //     else if(dia_semana == 4){
+    //     System.out.println("Es Jueves");
+    // }
+
+    //     else if(dia_semana == 5){
+    //     System.out.println("Es Viernes");
+    // }
+
+    //     else if(dia_semana == 6){
+    //     System.out.println("Es Sabado");
+    // }
     
+    //     else if(dia_semana == 7){
+    //     System.out.println("Es Domingo");
+    // }
+
+    // else {
+    //     System.out.println("El numero introducido no es correcto "+dia_semana );
+    // }
+
+    //Dias de la semana con Switch
+
+    // int dias=3;
+    // switch (dias) {
+    //     case 1:
+    //         System.out.println("Es Lunes");
+    //         break;
+    //     case 2:
+    //         System.out.println("Es Martes");
+    //         break;
+    //     case 3:
+    //         System.out.println("Es Miercoles");
+    //         break;
+    //     case 4:
+    //         System.out.println("Es Jueves");
+    //         break;
+    //     case 5:
+    //         System.out.println("Es Viernes");
+    //         break;
+
+    //     case 6:
+    //         System.out.println("Es Sabado");
+    //         break;
+    //     case 7:
+    //         System.out.println("Es Domingo");
+    //         break;
+
+    //     default:
+    //         System.out.println("El numero introducido no a sido reconocido");
+    //         break;
+    // }
+
         }
-    
     }
