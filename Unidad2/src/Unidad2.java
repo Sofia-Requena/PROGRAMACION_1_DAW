@@ -48,8 +48,7 @@ public class Unidad2 {
     // int numero;
     // //Ejemplo de pedir un numero y mostrarlo por pantalla.
     // System.out.println("Introduce un número entero: ");
-    // numero=sc.nextInt(); 
-    // sc.nextLine(); //Para que pase a la siguiente línea y se ejecute.
+    // numero=sc.nextInt(); sc.nextLine(); //Para que pase a la siguiente línea y se ejecute.
     // String nombre = sc.next(); //Solo va a leer un caracter, no va a leer todo lo que se escriba en la línea.
     // System.out.println("El número introducido es: "+numero+" y tu nombre es "+nombre);
 
@@ -192,10 +191,99 @@ public class Unidad2 {
     //     i++;
     // } while (i<0);
 
+    //CLASE 5:
+
+        // for (int i=1; i<=4; i++){
+        //     for (int j=1; j<=i; j--){
+        //         System.out.print("*");
+
+        //     }
+        //     System.out.println();
+        // }
+
+        // for (int i=1; i<=4; i++){
+        //     if (i%2==0) {
+        //         for (int j=4; j>=i; j--){
+        //         System.out.print("*");
+
+        //     }
+        //         System.out.println();
+        //     }
+            
+        // }
+
+    //CLASE 6: RECURSIVIDAD DE FUNCIONES
+        // System.out.println ("El factorial de 3 es: "+calcularFactorial(3));
+        
+        // int a = 254; 
+        // System.out.println(funcion(a, 2));
+
+        // int a = 254; 
+        // System.out.println(funcionCambio(a, 2));
+        // incre(4);
+        // increCambio(4);
 
 
+        ///Atender excepciones
+        // try {
+        // int resultado=divide(10, 0);
+        // System.out.println(resultado);
+        // }
+        // } catch (Exception e) {
+        //     // TODO: handle exception
+        // }
 
+        
+    
+    
+    //     public static int divide (int numerador, int denominador) throws Exception{
+    //         return numerador/denominador;}
 
+    }
 
+    public static long calcularFactorial(int n) {
+        // Caso base: el factorial de 0 es 1
+        if (n == 0) {
+            return 1;
+        } else {
+            // Paso recursivo: n * factorial(n-1)
+            return n * calcularFactorial(n - 1);
         }
     }
+
+    public static int funcion(int num, int pos){
+        if(num < 10){
+            return num; 
+        }else{
+            return (num % 10) * (int) Math.pow(10, pos) + (funcion(num/10, pos-1));
+        }
+    }
+
+    public static int funcionCambio(int num, int pos){
+        if(num < 10){
+            return num; 
+        }else{
+            return (funcionCambio(num/10, pos-1)+(num % 10)*(int) Math.pow(10, pos));
+        }
+    }
+
+    public static void incre(int n){
+        if(n>0){
+            incre(n-1);
+            System.out.print(n);
+        }
+        else
+        System.out.println();
+    }
+
+    public static void increCambio(int n){
+    if(n>0){
+        System.out.print(n);
+        incre(n-1);
+    }
+    else
+    System.out.println();
+}
+
+//No borrar llave de main
+}
