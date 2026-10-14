@@ -646,8 +646,6 @@ public class RelacionEjercicios {
         hemos calculado. Y en la posicion de numero que es el numero introducido por teclado no cambia,porque sigue siendo el limite 
         hasta donde queremos calcular. 
         */
-
-
         if (contador > numero) {
             return;
         }
