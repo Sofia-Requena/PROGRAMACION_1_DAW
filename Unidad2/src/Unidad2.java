@@ -171,7 +171,31 @@ public class Unidad2 {
     //         break;
     // }
 
-    //CLASE 4: 
+    //CLASE 4: Bucles con while; do while y for.
+    //Estructura con for (para ejecutar de un sitio a otro):
+    // for(int i=0; i<=3;i++){
+    //     System.out.println(i);
+    // }
+
+    // //Estructura con while (mientra ocurra algo):
+    // int i=0;
+    // while (i<0) {
+    //      System.out.println(i);
+    //      i++;
+    // }
+
+
+    // //Estructura con do while (haz mientras se cumpla la condicion):
+    // i=0;
+    // do {
+    //     System.out.println(i);
+    //     i++;
+    // } while (i<0);
+
+
+
+
+
 
         }
     }
