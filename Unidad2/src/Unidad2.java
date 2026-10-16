@@ -239,6 +239,9 @@ public class Unidad2 {
     //     public static int divide (int numerador, int denominador) throws Exception{
     //         return numerador/denominador;}
 
+    //Emoji
+    System.out.println("| Qué contento estoy que es viernes!! || 🗻♌ |");
+
     }
 
     public static long calcularFactorial(int n) {

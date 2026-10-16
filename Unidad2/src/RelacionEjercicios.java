@@ -632,7 +632,7 @@ public class RelacionEjercicios {
         fibonacciRecursivo(numero1, numero2, contador, numero);
 }
 
-    public static void fibonacciRecursivo(int numero1, int numero2, int contador, int numero) {
+    public static int fibonacciRecursivo(int numero1, int numero2, int contador, int numero) {
         /* Primero comprobamos si el contador es mayor que el numero
         introducido por teclado. Esta comprobacion es el CASO BASE de nuestra funcion recursiva,
         ya que cuando se cumple significa que hemos calculado todos los terminos que necesitabamos 
@@ -647,11 +647,12 @@ public class RelacionEjercicios {
         hasta donde queremos calcular. 
         */
         if (contador > numero) {
-            return;
+            return numero2;
         }
+
         int resultado = numero1 + numero2;
         System.out.print(resultado + " ");
-        fibonacciRecursivo(numero2, resultado, contador+1, numero);
+        return fibonacciRecursivo(numero2, resultado, contador+1, numero);
 
     }
 
