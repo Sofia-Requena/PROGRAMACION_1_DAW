@@ -5,9 +5,9 @@ public class RelacionEjercicios {
         // actividad1();
         // actividad2();
         // actividad3();
-        actividad4();
+        // actividad4();
         // actividad5();
-        // actividad6();
+        actividad6();
         // actividad7();
         // actividad8();
         // actividad9(); 
@@ -361,7 +361,7 @@ public class RelacionEjercicios {
         int retencion_irpf_casado=20;
         /*Aqui podemos ver que al principio le pedimos los datos necesarios al usuario, despues pasamos a calcular con un switch dependiendo
         del cargo que tenga, tendra un sueldo u otro */
-        System.out.println("Introduzca el cargo del empleado (1 - Prog. junior, 2 - Prog. senior, 3 – Jefe de proyecto)): ");
+        System.out.println("Introduzca el cargo del empleado (1 - Prog. junior, 2 - Prog. senior, 3 - Jefe de proyecto)): ");
         cargo_empleado=sc.nextInt(); sc.nextLine();
         System.out.println("¿Cuántos días ha estado de viaje visitando clientes?: ");
         dias_viaje=sc.nextInt(); sc.nextLine();
