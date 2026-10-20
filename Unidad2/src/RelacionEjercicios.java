@@ -9,11 +9,11 @@ public class RelacionEjercicios {
         // actividad5();
         // actividad6();
         // actividad7();
-        actividad8();
+        // actividad8();
         // actividad9(); 
         // actividad10_Par();
         // actividad10_Impar();
-        // actividad_Ampliacion();
+        actividad_Ampliacion();
 
     
     //Llave main
@@ -629,10 +629,10 @@ public class RelacionEjercicios {
 
     public static int fibonacciRecursivo(int numero1, int numero2, int contador, int numero) {
         /* Primero comprobamos si el contador es mayor que el numero
-        introducido por teclado. Esta comprobacion es el CASO BASE de nuestra funcion recursiva,
+        introducido por teclado. Esta comprobacion es el Caso Base de nuestra funcion recursiva,
         ya que cuando se cumple significa que hemos calculado todos los terminos que necesitabamos 
         y tenemos que detenernos. Para detener la funcion utilizamos return, que en este caso no devuelve ningun 
-        valor,sino que termina la llamada actual.Si el contador todavia no es mayor que el numero introducido,
+        valor,sino que termina la llamada actual. Si el contador todavia no es mayor que el numero introducido,
         seguimos ejecutando las instrucciones de la funcion. Despues calculamos el siguiente termino de Fibonacci,sumando los dos numeros anteriores 
         que estan guardados en numero1 y numero2. Guardamos la suma en resultado y la mostramos por pantalla. Por ultimo, volvemos a 
         llamar a la misma funcion, ya que necesitamos seguir calculando los siguientes terminos de Fibonacci. En esta nueva llamada pasamos 
@@ -642,7 +642,7 @@ public class RelacionEjercicios {
         hasta donde queremos calcular. 
         */
         if (contador > numero) {
-            return numero2;
+            return numero;
         }
         
         int resultado = numero1 + numero2;
