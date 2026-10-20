@@ -5,7 +5,7 @@ public class RelacionEjercicios {
         // actividad1();
         // actividad2();
         // actividad3();
-        // actividad4();
+        actividad4();
         // actividad5();
         // actividad6();
         // actividad7();
@@ -155,7 +155,7 @@ public class RelacionEjercicios {
         double nota1=0;
         double nota2=0;
         double media=0;
-        int resultado_apto_noApto;
+        int resultado_apto_noApto=0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce la primera nota: ");
         nota1=sc.nextDouble(); sc.nextLine();
@@ -170,7 +170,7 @@ public class RelacionEjercicios {
             System.out.println("El alumno esta aprobado con la nota media de: "+media);
         }
 
-        if (media>=0 && media<=4.5) {
+        if (media>=0 && media<=4.9) {
             System.out.println("¿Cual ha sido el resultado de la recuperacion? apto (escribe el numero 1) o no apto (escribe el numero 2)");
             resultado_apto_noApto=sc.nextInt(); sc.nextLine();
             if (resultado_apto_noApto == 1) {
@@ -181,7 +181,7 @@ public class RelacionEjercicios {
                 System.out.println("El alumno esta suspenso con la nota de: "+media);
             }
 
-            if (resultado_apto_noApto != 1 ||  resultado_apto_noApto != 2) {
+            if (resultado_apto_noApto != 1 &&  resultado_apto_noApto != 2) {
                 System.out.println("El resultado introducido no es correcto");
             }
         }
@@ -465,11 +465,6 @@ public class RelacionEjercicios {
         System.out.println("Las veces que se han repetido el numero 7 y -7 ha sido: "+repetido_7_o_Menos_7);
         }
         } while (numero!=0);
-
-
-
-
-
     }
 
 
@@ -649,7 +644,7 @@ public class RelacionEjercicios {
         if (contador > numero) {
             return numero2;
         }
-
+        
         int resultado = numero1 + numero2;
         System.out.print(resultado + " ");
         return fibonacciRecursivo(numero2, resultado, contador+1, numero);
