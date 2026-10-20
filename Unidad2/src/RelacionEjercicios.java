@@ -7,9 +7,9 @@ public class RelacionEjercicios {
         // actividad3();
         // actividad4();
         // actividad5();
-        actividad6();
+        // actividad6();
         // actividad7();
-        // actividad8();
+        actividad8();
         // actividad9(); 
         // actividad10_Par();
         // actividad10_Impar();
