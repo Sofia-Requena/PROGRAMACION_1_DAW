@@ -6,8 +6,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Actividad9 {
-        public static void main(String[] args) {
-        
+
+    public static void main(String[] args) {
+        Actividad9();
+    }
+
+    public static void Actividad9(){
     int letraRepetida=0;
         try {
             Scanner sc = new Scanner(new File("./src/Actividades/Actividad9/Actividad9.txt")); //Puedes encontrar esta línea entre paréntesis en try por ser crítica
@@ -35,7 +39,8 @@ public class Actividad9 {
         } catch (Exception e) {
             System.out.println(e.getMessage());/*Muestra el mensaje del porque no funciona el programa. Si pusieramos solo e nos mostraria tambien que excepcion ocurre*/
         }
+        
     }
 
-    /*No borrar llave */
+/*No borrar llave */
 }
