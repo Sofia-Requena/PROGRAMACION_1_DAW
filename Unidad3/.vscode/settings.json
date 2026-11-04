@@ -1,7 +1,13 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\sofia\\PROGRAMACION_JAVA_TR1\\PROGRAMACION_1_DAW\\PackageMatematicas\\src\\mates\\Package_matematicas.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\sofia\\PROGRAMACION_JAVA_TR1\\PROGRAMACION_1_DAW\\Package matematicas\\Package matematicas.jar"
+        ]
+    }
 }

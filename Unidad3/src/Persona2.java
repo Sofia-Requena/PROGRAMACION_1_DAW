@@ -1,17 +1,23 @@
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+enum estadoCivil{
+    SOLTERO, CASADO, DIVORCIADO
+}
 
 public class Persona2 {
     String nombre;
     LocalDate fechaNacimiento;
     double estatura;
-    final String DNI;
+    String DNI;
     static int hijos;
     Persona2 pareja;
+    estadoCivil estado;
     
 
-public Persona2(){} //Contructor por defecto 
+public Persona2(){
+    this.estado=estadoCivil.SOLTERO;
+} //Contructor por defecto 
 
 public Persona2(String DNI,String fecha){ //Contructor parametros
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -62,7 +68,7 @@ public void obtenerEdad(){
     }
 
     public String getDNI() {
-        // return DNI;
+        return DNI;
     }
 
     public static int getHijos() {
@@ -81,9 +87,14 @@ public void obtenerEdad(){
         this.pareja = pareja;
     }
 
-    public void asignaPareja(Persona2 p){
-        this.pareja=p; //Hará referencia a la ya existente
+    public void imprimePersona(){
+        // System.out.println("Te llamas: "+this.nombre);
+        // System.out.println("Te llamas: "+this.nombre);
+        // System.out.println("Te llamas: "+this.nombre);
     }
+    // public void asignaPareja(Persona2 p){
+    //     this.pareja=p; //Hará referencia a la ya existente
+    // }
 
     public static void main(String[] args) {
         Persona2 p=new Persona2("12345678A","15/08/1985");
@@ -95,9 +106,10 @@ public void obtenerEdad(){
         Persona2 p2=new Persona2("12345678B","01/07/1987");
             p.hijos=1;
             System.out.println("Tienes "+p2.hijos+" hijos");
-
+            p2.setPareja(p);
+            p.setPareja(p2);
         
-        // System.out.println(p.getDNI()+ " "+p.getNombre("Sofia")+" "+p.getEstatura(1.58)+" "+p.getHijos());
+        
 
         
     }

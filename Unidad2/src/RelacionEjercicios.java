@@ -8,12 +8,12 @@ public class RelacionEjercicios {
         // actividad4();
         // actividad5();
         // actividad6();
-        // actividad7();
+        actividad7();
         // actividad8();
         // actividad9(); 
         // actividad10_Par();
         // actividad10_Impar();
-        actividad_Ampliacion();
+        // actividad_Ampliacion();
 
     
     //Llave main
@@ -398,7 +398,7 @@ public class RelacionEjercicios {
         /*He decido meter en cada if el resultado para que las variables creadas del irpf_soltero o irpf_casado se muestre entre el parentesis*/
 
         if (estado_civil==1) {
-            retencion_IRPF=((sueldo_bruto*25)/100);
+            retencion_IRPF=((sueldo_bruto*retencion_irpf_soltero)/100);
             sueldo_neto=sueldo_neto-retencion_IRPF;
 
         System.out.println("------------------------------------------");
@@ -413,7 +413,7 @@ public class RelacionEjercicios {
         }
 
         if (estado_civil==2) {
-            retencion_IRPF=((sueldo_bruto*20)/100);
+            retencion_IRPF=((sueldo_bruto*retencion_irpf_casado)/100);
             sueldo_neto=sueldo_neto-retencion_IRPF;
 
         System.out.println("------------------------------------------");
