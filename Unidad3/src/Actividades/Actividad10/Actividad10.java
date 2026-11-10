@@ -4,35 +4,64 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Actividad10 {
-    public static void main(String[] args) {
-        /*NO ENTIENDO PORQUE NO FUNCIONA, SI LO HE HECHO TODO */
-        LocalDate fechaArchivo = LocalDate.now();
-        String anio = fechaArchivo.format(DateTimeFormatter.ofPattern("yyyy"));
-        String mes = fechaArchivo.format(DateTimeFormatter.ofPattern("MM"));
-        String dia = fechaArchivo.format(DateTimeFormatter.ofPattern("dd"));
+    public static void main() {
+        Actividad10();
 
+    }
+
+    public static void Actividad10() {
         try {
-            Scanner ruta = new Scanner(System.in); 
-            System.out.print("Escribe una ruta de un archivo .txt: ");
-            String ruta_teclado=ruta.nextLine(); 
-            
-            Scanner sc = new Scanner(new File(ruta_teclado)); 
-            while (sc.hasNextLine()) {
-                String contenido = sc.nextLine();
-                PrintWriter pw = new PrintWriter(ruta_teclado+"_copia_"+anio+"_"+mes+"_"+dia+".txt");
-                pw.println(contenido);
-                pw.close();
-                System.out.println("Archivo creado con exito");
+            String ruta;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Introduce la ruta del fichero: ");
+            ruta = sc.nextLine();
+
+            File fichero = new File(ruta);
+
+            if (!fichero.exists() || !fichero.isFile()) {
+                System.out.println("El fichero no existe");
+                return;
             }
 
+            String nombre = fichero.getName();
+            int posicionPunto = nombre.lastIndexOf('.');
+
+            String nombreSinExtension;
+            String extension;
+
+            if (posicionPunto > 0) {
+                nombreSinExtension = nombre.substring(0, posicionPunto);
+                extension = nombre.substring(posicionPunto);
+            } else {
+                nombreSinExtension = nombre;
+                extension = "";
+            }
+
+            LocalDate fecha = LocalDate.now();
+            String nuevoNombre = nombreSinExtension + "_copia_" + fecha.getYear() + "_" + fecha.getMonthValue() + "_"
+                    + fecha.getDayOfMonth() + ".txt";
+            File copia = new File(fichero.getParent(), nuevoNombre);
+
+            Scanner lector = new Scanner(fichero);
+            PrintWriter escritor = new PrintWriter(copia);
+
+            while (lector.hasNextLine()) {
+                String linea = lector.nextLine();
+                escritor.println(linea);
+            }
+
+            lector.close();
+            escritor.close();
+            System.out.println("Copia creada: " + copia.getName());
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("Error al copiar el fichero.");
         }
-        
+
     }
+    /* No borrar llave */
 }
