@@ -4,6 +4,11 @@ import Actividades.Actividad2.Fecha;
 import Actividades.Actividad2.Persona3;
 
 public class MainActividad2 {
+/*Actividad: Crea las clases en JAVA con sus correspondientes constructores y funciones necesarias para 
+mostrar información y modificar los atributos del siguiente diagrama de clases */
+
+/*Esta actividad se encuentra en la pagina 18. Esta actividad habia que hacer los atributos, los constructores, los metodos 
+de cada uno de las distintas clases. Y despues se unian en este MAIN*/
 public static void main(String[] args) {
         /*Llamar ambos objetos y enlazarlos */
         Fecha fecha = new Fecha(29, 6, 2008);

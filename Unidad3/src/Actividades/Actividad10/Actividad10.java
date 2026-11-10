@@ -8,6 +8,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Actividad10 {
+
+    /*2) Implementa un procedimiento que lee el contenido de un fichero, cuya ruta le indicas por teclado, 
+    y lo escribe en otro fichero con el mismo nombre y añadiendo copia y fecha. Ejemplo: fichero→ fichero_copia_yyyy_mm_dd.txt. 
+    Recuerda usar LocalDate.now() y que para sacar el nombre sin la extensión puedes usar nombre.substring(0, nombre.lastIndexOf('.')); 
+    ¡¡Ojo que si no das extensión fallará!! Con fichero.getParent() tendrás el path del archivo */
+
+    /*Este es la actividad es de la pagina 31 en donde copiamos el contenido de un fichero, con su mismo nombre, 
+    pero poniendo copia y la fecha copia_yyyy_mm_dd */
     public static void main() {
         Actividad10();
 

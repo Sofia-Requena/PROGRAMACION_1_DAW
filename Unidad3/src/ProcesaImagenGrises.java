@@ -35,7 +35,7 @@ public class ProcesaImagenGrises {
                         nuevoColor = new Color(color.getRed(), color.getGreen(), color.getBlue()).getRGB();
                     }
                     else{
-                        nuevoColor = new Color(gris,gris,  gris).getRGB();
+                        nuevoColor = new Color(gris,gris, gris).getRGB();
                     }
                     imagenGris.setRGB(x, y, nuevoColor);
                 }

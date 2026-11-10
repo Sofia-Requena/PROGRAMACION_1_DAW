@@ -5,6 +5,11 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Actividad6 {
+    /*Actividad: Ahora considera el formato jugador1=3*/
+    
+    /*Esta actividad se encuentra en la pagina 28, en esta actividad nos damos cuenta de que necesitamos usar delimitadores para 
+    poder coger el dato de jugador1=1 ya que el = no nos deja cogerlo, por lo que al usar el delimitador useDelimiter("[=\\s]+") al poner el = delante de la \\s 
+    le estamos indicando que si se encuentra algun signo = lo ignore y si hay despues datos o informacion que queremos saber, nos lo de.*/
     public static void main(String[] args) {
 
         int partidasJugador1=0,partidasJugador2=0;

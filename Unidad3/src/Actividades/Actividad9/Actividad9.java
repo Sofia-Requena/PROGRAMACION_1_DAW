@@ -6,7 +6,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Actividad9 {
+/*1) Implementa un procedimiento que lee el contenido de un fichero, solicita una palabra por teclado y 
+dice cuántas veces aparece en el texto. Una vez leas la línea con readLine, usa Scanner con 
+useDelimeter("\\s+") para separar por uno o varios espacios y equalsIgnoreCase para ignorar caso Hola y hola. */
 
+/*Esta actividad es de la pagina 31, en esta actividad se pide que se introduzca una palabra, y comprobamos si esta 
+escrita en un archivo concreto, en caso de que no este esa palabra escrita en el archivo se notifica, y si esta escrita,
+mostraremos cuantas veces esta escrita esa palabra. */
     public static void main(String[] args) {
         Actividad9();
     }

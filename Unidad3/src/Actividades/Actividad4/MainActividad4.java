@@ -7,6 +7,12 @@ import Actividades.Actividad4.Proveedor;
 import Actividades.Actividad4.Suministra;
 
 public class MainActividad4 {
+/*Actividad: Crea las clases en JAVA con sus correspondientes constructores y 
+funciones necesarias para mostrar información y modificar los atributos del siguiente diagrama E-R */
+
+/*Esta actividad se encuentra en la pagina 20. Esta actividad habia que hacer los atributos, los constructores, los metodos 
+de cada uno de las distintas clases. Y despues se unian en este MAIN */
+
 public static void main(String[] args) {
         Proveedor proveedor = new Proveedor(12, "direccion proveedor", "Avila", "Avila");
         proveedor.imprimeProveedor();

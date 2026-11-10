@@ -2,10 +2,6 @@ package Actividades.Actividad1;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-enum estadoCivil{
-    SOLTERO, CASADO, DIVORCIADO
-}
-
 
 public class Persona5 {
     /*Atributos */
@@ -14,13 +10,13 @@ public class Persona5 {
     private LocalDate fechaNacimiento;
     private String direccion;
     private String genero;
-    private estadoCivil estado_civil;
+    private String estado_civil;
 
     /*Constructor */ /*Sin parametros; Por parametros; Por copia */
     public Persona5(){
     }
 
-    public Persona5( String nombre, String DNI, String fecha, String direccion, String genero){
+    public Persona5( String nombre, String DNI, String fecha, String direccion, String genero, String Estado_Civil){
         /*Para poner la fecha de nacimiento */
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         this.nombre=nombre;
@@ -28,7 +24,7 @@ public class Persona5 {
         this.fechaNacimiento=LocalDate.parse(fecha,fmt);
         this.direccion=direccion;
         this.genero=genero;
-        // this.estado_civil=estadoCivil.SOLTERO;
+        this.estado_civil=Estado_Civil;
         
     }
 
@@ -84,11 +80,11 @@ public class Persona5 {
         this.genero = genero;
     }
 
-    public estadoCivil getEstado_civil() {
+    public String getEstado_civil() {
         return estado_civil;
     }
 
-    public void setEstado_civil(estadoCivil estado_civil) {
+    public void setEstado_civil(String estado_civil) {
         this.estado_civil = estado_civil;
     }
 
@@ -99,6 +95,7 @@ public class Persona5 {
         System.out.println("La fecha es: "+fechaNacimiento);
         System.out.println("Tu calle es: "+direccion);
         System.out.println("Eres: "+genero);
+        System.out.println("Tu estado civil es: "+estado_civil);
         System.out.println("");
         
     }

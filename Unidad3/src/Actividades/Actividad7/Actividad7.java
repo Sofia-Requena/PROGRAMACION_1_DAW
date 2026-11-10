@@ -5,7 +5,13 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Actividad7 {
-            public static void main(String[] args) {
+    /*Actividad: ¿Qué cambia si tuviera el siguiente contenido? Prueba este código para ver qué pasa. 
+    jugador1 3 jugador2 4 jugador3 1*/
+    
+    /*En esta Actividad (se encuentra en la pagina 28) comprobamos que es lo que sucede si no usamos un delimitador de salto de linea
+    el cual si no saltamos la linea no lee el dato que esta en la linea de abajo. Por lo que tenemos que usar
+    un useDelimiter("[\\n]+") para poder saltar de linea*/
+    public static void main(String[] args) {
 
     int partidasJugador1=0,partidasJugador2=0, partidasJugador3=0;
     try {

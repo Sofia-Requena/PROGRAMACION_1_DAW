@@ -4,6 +4,11 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Actividad5_Scanner {
+    /*Actividad: ¿Y si hubiera que hacer la media de notas de alumnos? Cada grupo está en una fila */
+
+    /*Esta actividad se encuentra en la pagina 27, en esta actividad calculamos la media de los alumnos de cada grupo.
+    La nota de cada grupo se encuentra en una fila distinta, y se va haciendo la media de cada una de las lineas de manera individual */
+
     public static void main(String[] args) {
         try{
             Scanner leer = new Scanner(new File("./src/Actividades/Actividad5/FicheroActividad5Scanner.txt"));
