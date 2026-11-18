@@ -4,6 +4,13 @@ import java.io.File;
 import java.util.Scanner;
 
 public class MainActividad8 {
+    /*Utilizando un fichero CSV que contiene datos de personas separados por ‘;’, vamos a crear 
+    objetos Persona que extraigan la información del fichero. El fichero contiene por cada fila la 
+    siguiente información: nombre;edad;teléfono;población
+    Se pide crear la clase Persona completa y una clase en cuyo main se crea la persona vacía y que 
+    vaya recibiendo los datos del fichero CSV y vaya mostrando los datos de la persona antes de pasar a 
+    la siguiente línea. Puedes inventarte los valores de las personas pero al menos el fichero tiene que 
+    tener dos líneas.*/
     public static void main(String[] args) {
         PersonaActividad8 persona = new PersonaActividad8();
 

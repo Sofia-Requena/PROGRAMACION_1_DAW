@@ -1,6 +1,12 @@
 package RelacionEjerciciosUnidad3.RelacionActividad7;
 
 public class Lucha {
+    /*Crea una clase Monstruo y Héroe, ambas tienen como atributos el nombre, vida y ataque y que tú 
+    decides sus valores al crearlos. Crea las clases completas (constructor, get-set y mostrarInfo) y el 
+    método para recibirDaño. En otra clase Lucha tendrás el main donde crearás ambos objetos y 
+    mientras uno de los dos esté vivo se irán atacando el uno al otro. El turno de inicio será aleatorio y 
+    tras cada ataque se comprobará si hay vencedor. Al acabar muestras el nombre del ganador y la vida 
+    restante.*/
     public static void main(String[] args) {
         Heroe heroe1 = new Heroe("Spider-Man", 100, 20);
         Monstruo monstruo1 = new Monstruo("Venom", 100, 10);

@@ -6,6 +6,21 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Juego {
+/*Ejercicio tipo examen. Juego de la carta más alta. El proyecto tiene dos clases principales: 
+Carta y Jugador. Para Jugador se guardarán los atributos que estimes oportunos y la Carta que le haya tocado. 
+Para Carta tendrá como atributos el valor y como enum el palo (Oros, Copas, Espadas o Bastos) 
+Las clases están completas y tendrán una función para mostrar sus atributos (ej. imprimeJugador() e imprimeCarta()).
+Para utilizar ambas clases, la clase Juego tiene como atributos ganadas1 y ganadas2 y en main se en 
+cargará de: 
+    • Crear un objeto juego que inicializa ganadas1 y ganadas2 a 0. Después ejecuta su función 
+    cartaAlta() que hará:
+    ◦ Asignar una carta aleatoria a cada jugador. Cada carta se genera con un valor aleatorio 
+    entre 1 y 12.
+    ◦ Mostrar las cartas de cada jugador y comprobar quién ha ganado. Gana la carta mayor.
+    ◦ El juego se acaba cuando uno de los jugadores ha ganado 3 veces
+    ◦ Al terminar guardará en un fichero el resultado de ganadas1 y ganadas2 a modo de histórico de partidas.(Recuerda usar append).
+    Opcional: Incorpora alguna lógica para el palo en caso de empate. Por ejemplo, solicita un palo de muestra */
+    
     /*Atributos*/
     private int ganadas1;
     private int ganadas2;
