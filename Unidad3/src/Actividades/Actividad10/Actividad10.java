@@ -50,8 +50,7 @@ public class Actividad10 {
             }
 
             LocalDate fecha = LocalDate.now();
-            String nuevoNombre = nombreSinExtension + "_copia_" + fecha.getYear() + "_" + fecha.getMonthValue() + "_"
-                    + fecha.getDayOfMonth() + ".txt";
+            String nuevoNombre = nombreSinExtension + "_copia_" + fecha.getYear() + "_" + fecha.getMonthValue() + "_"+ fecha.getDayOfMonth() + ".txt";
             File copia = new File(fichero.getParent(), nuevoNombre);
 
             Scanner lector = new Scanner(fichero);

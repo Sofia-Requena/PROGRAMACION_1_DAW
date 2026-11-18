@@ -5,16 +5,18 @@ public class Pieza {
     private String nombre;
     private String color;
     private double precio;
+    private Categoria categoria;
 
 
     /*Constructor */ /*Sin parametros; Por parametros; Por copia */
     public Pieza() {}
 
 
-    public Pieza(String nombre, String color, double precio) {
+    public Pieza(String nombre, String color, double precio, Categoria categoria) {
         this.nombre = nombre;
         this.color = color;
         this.precio = precio;
+        this.categoria = categoria;
     }
 
     public Pieza(Pieza copiaPieza) {
@@ -55,11 +57,20 @@ public class Pieza {
         this.precio = precio;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
         /*Mensajes para imprimir */
     public void imprimePieza(){
         System.out.println("El nombre es: "+nombre);
         System.out.println("La pieza es de color: "+color);
         System.out.println("El precio es: "+precio);
+        System.out.println("El codigo de categoria es: "+categoria.getCodigo());
         System.out.println("");
     }
 

@@ -64,11 +64,15 @@ public class Suministra {
 
     /*Mensajes para imprimir */
     public void imprimeSuministra(){
+        if (proveedor != null && pieza != null) {
+            
+        
         System.out.println("La cantidad de suministro a sido de: "+cantidad);
         System.out.println("La fecha en la que ha sido sumistrado es: "+fecha);
         System.out.println("El codigo del proveedor es: "+proveedor.getCodigo());
         System.out.println("El nombre de la pieza es: "+pieza.getNombre());
         System.out.println("");
+        }
     }
 
 
