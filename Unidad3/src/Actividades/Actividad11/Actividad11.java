@@ -11,7 +11,7 @@ public class Actividad11 {
     public static void main(String[] args) {
         // Rutas de entrada y salida
         String rutaEntrada = "./Imagenes_portada/New_York_Navidad.png";
-        String rutaSalida = "./New_York_Color_Negativo.png";
+        String rutaSalida = "./src/Actividades/Actividad11/New_York_Color_Negativo.png";
 
         try {
             // Leer imagen JPEG

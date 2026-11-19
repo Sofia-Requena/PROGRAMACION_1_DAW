@@ -37,7 +37,7 @@ public class Actividad7 {
             }
             scLinea.close();
         }
-        System.out.println(partidasJugador1+"-"+partidasJugador2+"-"+partidasJugador3);
+        System.out.println("Partidas Jugador 1: "+partidasJugador1+" - "+"Partidas Jugador 2: "+partidasJugador2+" - "+"Partidas Jugador 3: "+partidasJugador3);
         sc.close();
     } catch (FileNotFoundException e) {
         System.out.println("No se encuentra el fichero.");
