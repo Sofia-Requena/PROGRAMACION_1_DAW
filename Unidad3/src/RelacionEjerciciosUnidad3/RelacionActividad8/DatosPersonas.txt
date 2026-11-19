@@ -1,0 +1,2 @@
+Rocio;20;60011122;Salamanca
+Sofia;18;600111223;NewYork

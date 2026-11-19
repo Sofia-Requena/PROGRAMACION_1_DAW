@@ -1,0 +1,1 @@
+Jugador1=3, jugador2=4, jugador3=1
