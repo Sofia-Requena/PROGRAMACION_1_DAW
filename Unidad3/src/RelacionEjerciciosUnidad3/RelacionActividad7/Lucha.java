@@ -8,6 +8,7 @@ public class Lucha {
     tras cada ataque se comprobará si hay vencedor. Al acabar muestras el nombre del ganador y la vida 
     restante.*/
     public static void main(String[] args) {
+        /*Aqui creamos el heroe y el monstruo y vamos mostrando sus datos*/
         Heroe heroe1 = new Heroe("Spider-Man", 100, 20);
         Monstruo monstruo1 = new Monstruo("Venom", 100, 10);
 
@@ -21,6 +22,8 @@ public class Lucha {
         monstruo1.mostrarInfo();
         System.out.println("");
 
+        /*Aqui vemos que mientras que la vida de ambos sean mayor a cero lucharan. Y dependiendo del numero aleatorio atacara el heroe o el 
+        monstruo. Cuando la vida de uno de los dos sea igual a 0 se mostrara el ganador y que vida le ha quedado*/
         while (heroe1.getVida()>0 && monstruo1.getVida()>0) {
             int min=1;
             int max=2;

@@ -58,12 +58,15 @@ cargará de:
         this.ganadas2 = ganadas2;
     }
 
-
+/*Mensajes para imprimir*/
    public void cartaAlta(){
+    /*Aqui lo que hacemos es pedimos por teclado que introduzcan un tipo de palo*/
     Scanner sc = new Scanner(System.in);
     System.out.println("Introduce un palo por teclado (Oros, Copas, Espadas o Bastos): ");
     String palo_teclado=sc.next(); sc.nextLine();
 
+    /*Aqui creamos dos jugadores y le damos los datos de nombre de cada uno. Tambien creamos las variables min y max para que 
+    nos de un numero al azar entre 1 y 12*/
     Jugador jugador1 = new Jugador();
     Jugador jugador2 = new Jugador();
     jugador1.setNombre("jugador1");
@@ -71,6 +74,8 @@ cargará de:
     int min=1;
     int max=12;
 
+    /*Aqui comprobamos que mientras que ninguno de los dos hayan ganado 3 veces, se le ira asignando un valor distinto
+    cuando alguno de los dos gane 3 veces se imprimira cuantas veces ha ganado cada uno*/
     while (ganadas1!=3 && ganadas2!=3) {
         int aleatorio =((int)(Math.random()*(max-min+1))+min);
         Carta carta1 = new Carta(aleatorio, "Espadas");
@@ -115,6 +120,9 @@ cargará de:
         System.out.println("");
     String contenido = "El jugador 1 ha ganado "+ganadas1+" veces";
     String contenido2 = "El jugador 2 ha ganado "+ganadas2+" veces";
+    
+    /*Aqui lo que hacemos es darle una ruta para crear un archivo, el cual se encargara de guardar los datos de
+    las partidas ganadas finales*/
         try {
             FileWriter archivo = new FileWriter("./src/RelacionEjerciciosUnidad3/RelacionActividad6/Resultados.txt",true); 
             BufferedWriter escritor = new BufferedWriter(archivo); 

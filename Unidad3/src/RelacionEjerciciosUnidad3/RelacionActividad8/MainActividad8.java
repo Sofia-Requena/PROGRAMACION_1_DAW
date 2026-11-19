@@ -15,9 +15,12 @@ public class MainActividad8 {
         PersonaActividad8 persona = new PersonaActividad8();
 
         try{
+            /*Aqui vemos que le damos una ruta de donde se encuentra el fichero*/
             Scanner leer = new Scanner(new File("./src/RelacionEjerciciosUnidad3/RelacionActividad8/DatosPersonas.txt"));
             String linea;
-
+            
+            /*Y mientras tenga lineas que leer se mostrara en pantalla cada uno y se guardara cada dato en su correspondiente variable
+            y al final se mostrara los datos en general de cada una de las personas que haya en cada linea*/
             while(leer.hasNextLine()){
                 linea=leer.nextLine();
                 
