@@ -13,11 +13,11 @@ public class TarjetaActividad3 {
     public TarjetaActividad3() {}
 
     public TarjetaActividad3(int numero, int codigo, String nombre, String fecha_Vencida, ClienteActividad3 cliente) {
-        Numero = numero;
-        Codigo = codigo;
-        Nombre = nombre;
-        Fecha_Vencida = fecha_Vencida;
-        Cliente = cliente;
+        this.Numero = numero;
+        this.Codigo = codigo;
+        this.Nombre = nombre;
+        this.Fecha_Vencida = fecha_Vencida;
+        this.Cliente = cliente;
     }
 
     public TarjetaActividad3(TarjetaActividad3 copiaTarjetaActividad3) {

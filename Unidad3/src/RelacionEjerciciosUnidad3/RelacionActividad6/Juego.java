@@ -78,7 +78,7 @@ cargará de:
     cuando alguno de los dos gane 3 veces se imprimira cuantas veces ha ganado cada uno*/
     while (ganadas1!=3 && ganadas2!=3) {
         int aleatorio =((int)(Math.random()*(max-min+1))+min);
-        Carta carta1 = new Carta(aleatorio, "Espadas");
+        Carta carta1 = new Carta(aleatorio, "Bastos");
         aleatorio =((int)(Math.random()*(max-min+1))+min);
         Carta carta2 = new Carta(aleatorio, "Oros");
         
@@ -137,6 +137,13 @@ cargará de:
             e.printStackTrace();
         }
 
+        /*Aqui mostramos informacion de los jugadores, este caso de ejemplo he decidido crear uno nuevo y enseñar como se 
+        mostraria la informacion de cada uno*/
+        Carta cartaJugador=new Carta(10, "Copas");
+        cartaJugador.imprimeCarta();
+        System.out.println();
+        Jugador jugador = new Jugador("Jugador1","Apellido","123456789D",13, cartaJugador);
+        jugador.imprimeJugador();
 
    }
 

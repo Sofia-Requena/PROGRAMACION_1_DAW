@@ -6,10 +6,6 @@ public class Racional {
     /*Atributos*/
     private int numerador  = 0;
     private int denominador = 0;
-    private int suma = 0;
-    private int restar = 0;
-    private int multiplicar = 0;
-    private int dividir = 0;
 
 
     
@@ -44,7 +40,7 @@ public class Racional {
         }
     }
 
-    /*Funciones de suma, resta, multiplicacion y division */
+    /*Funciones mcm */
     public int mcm(int absoluto_A, int absoluto_B){
             absoluto_A = Math.abs(absoluto_A);
             absoluto_B = Math.abs(absoluto_B);

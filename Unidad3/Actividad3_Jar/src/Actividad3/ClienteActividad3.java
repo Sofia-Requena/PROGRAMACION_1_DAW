@@ -13,12 +13,12 @@ public class ClienteActividad3 {
     public ClienteActividad3() {}
 
     public ClienteActividad3(int codigo, String fecha_nacimiento, String dNI, String nombre, String ciudad,SucursalActividad3 sucursal) {
-        Codigo = codigo;
-        Fecha_nacimiento = fecha_nacimiento;
-        DNI = dNI;
-        Nombre = nombre;
-        Ciudad = ciudad;
-        Sucursal = sucursal;
+        this.Codigo = codigo;
+        this.Fecha_nacimiento = fecha_nacimiento;
+        this.DNI = dNI;
+        this.Nombre = nombre;
+        this.Ciudad = ciudad;
+        this.Sucursal = sucursal;
     }
 
     public ClienteActividad3(ClienteActividad3 copiaClienteActividad3) {

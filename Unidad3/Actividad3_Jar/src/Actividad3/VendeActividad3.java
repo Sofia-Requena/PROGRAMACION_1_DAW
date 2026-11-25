@@ -12,9 +12,9 @@ public class VendeActividad3 {
     public VendeActividad3() {}
 
     public VendeActividad3(int precioVenta, SucursalActividad3 sucursal, ProductoActividad3 producto) {
-        PrecioVenta = precioVenta;
-        Sucursal = sucursal;
-        Producto = producto;
+        this.PrecioVenta = precioVenta;
+        this.Sucursal = sucursal;
+        this.Producto = producto;
     }
 
     public VendeActividad3(VendeActividad3 copiaVendeActividad3) {

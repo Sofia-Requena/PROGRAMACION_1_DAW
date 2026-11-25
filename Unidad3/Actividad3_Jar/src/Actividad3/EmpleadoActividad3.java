@@ -13,11 +13,11 @@ public class EmpleadoActividad3 {
     public EmpleadoActividad3() {}
     
     public EmpleadoActividad3(String legajo, String dNI, String telefonos, String nombre, String domicilio) {
-        Legajo = legajo;
-        DNI = dNI;
-        Telefonos = telefonos;
-        Nombre = nombre;
-        Domicilio = domicilio;
+        this.Legajo = legajo;
+        this.DNI = dNI;
+        this.Telefonos = telefonos;
+        this.Nombre = nombre;
+        this.Domicilio = domicilio;
     }
 
     public EmpleadoActividad3(EmpleadoActividad3 copiaEmpleadoActividad3) {

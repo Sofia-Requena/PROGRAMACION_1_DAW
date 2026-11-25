@@ -11,9 +11,9 @@ public class SucursalActividad3 {
     public SucursalActividad3() {}
 
     public SucursalActividad3(int numero, String domicilio, String ciudad) {
-        Numero = numero;
-        Domicilio = domicilio;
-        Ciudad = ciudad;
+        this.Numero = numero;
+        this.Domicilio = domicilio;
+        this.Ciudad = ciudad;
     }
 
     public SucursalActividad3(SucursalActividad3 copiaSucursalActividad3) {

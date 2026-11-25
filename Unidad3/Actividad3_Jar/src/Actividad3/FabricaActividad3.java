@@ -13,12 +13,12 @@ public class FabricaActividad3 {
     public FabricaActividad3() {}
 
     public FabricaActividad3(int cUIT, String pais, String gerente, String nombre, int cantidad_empleados, ProductoActividad3 producto) {
-        CUIT = cUIT;
-        Pais = pais;
-        Gerente = gerente;
-        Nombre = nombre;
-        Cantidad_empleados = cantidad_empleados;
-        Producto = producto;
+        this.CUIT = cUIT;
+        this.Pais = pais;
+        this.Gerente = gerente;
+        this.Nombre = nombre;
+        this.Cantidad_empleados = cantidad_empleados;
+        this.Producto = producto;
     }
 
     public FabricaActividad3(FabricaActividad3 copFabricaActividad3){

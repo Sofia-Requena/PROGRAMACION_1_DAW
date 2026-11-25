@@ -31,8 +31,7 @@ startsWith("G")). La letra y el fichero se pasan como parámetro.*/
                 String alter_ego = (String) heroe.get("alter_ego");
                 String first_appearance = (String) heroe.get("first_appearance");
                 String characters = (String) heroe.get("characters");
-                // Aqui se muestra los datos de aquel heroe que empiece por G
-                if (superhero.startsWith("G")) {
+                if (superhero.startsWith("G") && publisher.equals("DC Comics")){
                     System.out.println(superhero+"| "+publisher+"| "+alter_ego+"| "+first_appearance+"| "+characters); 
                 }
             }

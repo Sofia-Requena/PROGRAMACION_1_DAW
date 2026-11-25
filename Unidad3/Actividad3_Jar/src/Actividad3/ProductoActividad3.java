@@ -12,10 +12,10 @@ public class ProductoActividad3 {
     public ProductoActividad3() {}
     
     public ProductoActividad3(int codigo, String descripcion, String color, String costo) {
-        Codigo = codigo;
-        Descripcion = descripcion;
-        Color = color;
-        Costo = costo;
+        this.Codigo = codigo;
+        this.Descripcion = descripcion;
+        this.Color = color;
+        this.Costo = costo;
     }
 
     public ProductoActividad3(ProductoActividad3 copiaProductoActividad3) {

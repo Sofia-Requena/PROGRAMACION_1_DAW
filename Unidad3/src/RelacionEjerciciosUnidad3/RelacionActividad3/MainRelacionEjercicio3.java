@@ -17,6 +17,7 @@ generarás el package jar para incluirlo en un nuevo proyecto. Este proyecto va 
 que salen de las relaciones N:N y el fichero Prueba.java en cuyo main harás uso de las funciones 
 creadas. 
  */
+
     public static void main(String[] args) {
         /*Aqui creamos distintos objetos e imprimimos sus datos*/
         SucursalActividad3 sucursalAlmeria = new SucursalActividad3(10, "Calle Almeria", "Almeria");

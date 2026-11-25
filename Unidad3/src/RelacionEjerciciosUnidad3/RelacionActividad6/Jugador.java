@@ -72,7 +72,7 @@ public class Jugador {
         System.out.println("El apellido del jugador es: "+Apellido);
         System.out.println("El DNI del jugador es: "+DNI);
         System.out.println("El edad del jugador es: "+Edad);
-        System.out.println("La carta del jugador es: "+Carta);
+        System.out.println("La carta de muestra es: "+Carta.getPalo());
     }
 
 

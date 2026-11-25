@@ -1,3 +1,36 @@
 El jugador 1 ha ganado 2 veces
 El jugador 2 ha ganado 3 veces
 
+El jugador 1 ha ganado 2 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 2 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 3 veces
+El jugador 2 ha ganado 1 veces
+
+El jugador 1 ha ganado 2 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 2 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 3 veces
+El jugador 2 ha ganado 1 veces
+
+El jugador 1 ha ganado 1 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 3 veces
+El jugador 2 ha ganado 2 veces
+
+El jugador 1 ha ganado 3 veces
+El jugador 2 ha ganado 0 veces
+
+El jugador 1 ha ganado 1 veces
+El jugador 2 ha ganado 3 veces
+
+El jugador 1 ha ganado 3 veces
+El jugador 2 ha ganado 1 veces
+

@@ -11,10 +11,10 @@ public class TrabajaActividad3 {
     public TrabajaActividad3() {}
 
     public TrabajaActividad3(String dia, String horario, EmpleadoActividad3 empleado, SucursalActividad3 sucursal) {
-        Dia = dia;
-        Horario = horario;
-        Empleado = empleado;
-        Sucursal = sucursal;
+        this.Dia = dia;
+        this.Horario = horario;
+        this.Empleado = empleado;
+        this.Sucursal = sucursal;
     }
 
     public TrabajaActividad3(TrabajaActividad3 copiaTrabajaActividad3) {
